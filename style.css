@@ -89,7 +89,7 @@ body {
 }
 .container4 {
   background-color: white;
-  padding: 0;
+  padding: 0 10%;
 }
 .container4 .container-fluid {
   background-color: rgb(211, 210, 210);
@@ -98,19 +98,22 @@ body {
 .container4 .row h4 {
   margin: 30px;
 }
+
 .container4 .row .col-4 {
   height: 40vh;
   background-color: white;
 }
-.c1,
+
 .c2,
 .c3 {
-  box-shadow: 0px 2px 1px gray;
+  box-shadow: -1px 1px 1px gray;
 }
-.c4,
 .c5,
 .c6 {
-  box-shadow: 0px -0.7px 1px gray;
+  box-shadow: -1px -1px 1px gray;
+}
+.c4 {
+  box-shadow: 1px -1px 1px gray;
 }
 .container4 .container-fluid {
   background-color: white;
@@ -120,23 +123,32 @@ body {
 }
 .container5 .container {
   height: 50%;
-  background-color: red;
-  padding: 0 120px;
+  /* background-color: red; */
+  padding: 0 12%;
 }
 .container5 form input {
   border-radius: 5px;
-  border-style: none;
-  width: 350px;
+  border: 1px solid gray;
+
+  width: 100%;
+}
+.container5 .form-text div {
+  width: 32%;
+  justify-content: space-between;
+  height: 50px;
 }
 .form-text form {
   display: flex;
+
   justify-content: space-between;
 }
-.form-radio {
+.form-radio form {
   display: flex;
   margin: 20px 0px;
 }
-
+.form-radio form div {
+  margin: 0px 10px;
+}
 .form-radio form input {
   width: 10px;
   margin: 0 5px;
@@ -146,7 +158,42 @@ body {
   margin-right: 30px;
 }
 .form-option {
+  display: flex;
 }
+.form-option form {
+  width: 100%;
+}
+.form-option form div select {
+  width: 100%;
+  border-radius: 5px;
+}
+.form-message form div {
+  width: 100%;
+  height: 120px;
+}
+.form-message form div textarea {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.form-send form {
+  margin: 15px 0px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.form-send form button {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+
+  background-color: white;
+}
+.form-send .c {
+  width: 10px;
+}
+
 @media (min-width: 600px) and (max-width: 850px) {
   .row1 > .col-4,
   .row1 > .col-8,
@@ -158,17 +205,27 @@ body {
   .col2 {
     flex: 0 0 50%;
   }
-  .c3,
-  .c4,
+  .c4 {
+    box-shadow: -0.8px -0.7px 1px rgb(66, 66, 66);
+  }
+
   .c5,
-  .c6 {
-    box-shadow: 0px 0px 1px black;
+  .c3 {
+    box-shadow: 1px -1px 1px rgb(120, 120, 120);
   }
   .container4 .row .col-4 {
     flex: 0 0 50%;
   }
   .container3 .row .col-2 {
     flex: 0 0;
+  }
+  .container5 .container {
+    height: 50%;
+    /* background-color: red; */
+    padding: 0 5%;
+  }
+  .form-radio form label {
+    margin: 0;
   }
 }
 @media (max-width: 600px) {
@@ -193,8 +250,13 @@ body {
   .c4,
   .c5,
   .c6 {
-    box-shadow: 0px 0px 1px black;
+    box-shadow: 0px -1px 0px black; /* Sharp shadow only at the bottom */
   }
+
+  .container4 {
+    padding: 50px;
+  }
+
   .container1 .col-6 img {
     height: 80vh;
   }
@@ -204,5 +266,28 @@ body {
   }
   .container3 .row .col-2 {
     flex: 0 0;
+  }
+  .container5 .container {
+    width: 100%;
+  }
+  .form-text form {
+    height: 20vh;
+    flex-direction: column;
+  }
+  .container5 .form-text div {
+    width: 100%;
+  }
+  .container5 .form-radio form {
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+  .form-radio form div {    
+    margin: 0px;
+  }
+  .form-radio form label {
+    margin: 0;
+  }
+  .container5 .container {
+    padding: 0;
   }
 }
