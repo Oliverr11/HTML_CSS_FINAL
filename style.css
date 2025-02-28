@@ -100,7 +100,7 @@ body {
 }
 
 .container4 .row .col-4 {
-  height: 40vh;
+  /* height: 40vh; */
   background-color: white;
 }
 
@@ -119,10 +119,10 @@ body {
   background-color: white;
 }
 .container5 {
-  height: 100vh;
+  background-color: white;
 }
 .container5 .container {
-  height: 50%;
+  height: 76%;
   /* background-color: red; */
   padding: 0 12%;
 }
@@ -135,16 +135,16 @@ body {
 .container5 .form-text div {
   width: 32%;
   justify-content: space-between;
-  height: 50px;
+  height: 55px;
 }
 .form-text form {
   display: flex;
-
+  color: black;
   justify-content: space-between;
 }
 .form-radio form {
   display: flex;
-  margin: 20px 0px;
+  margin: 3% 0px;
 }
 .form-radio form div {
   margin: 0px 10px;
@@ -154,6 +154,7 @@ body {
   margin: 0 5px;
   background-color: black;
 }
+
 .form-radio form label {
   margin-right: 30px;
 }
@@ -167,6 +168,16 @@ body {
   width: 100%;
   border-radius: 5px;
 }
+input,
+select {
+  height: 30px;
+}
+.form-radio input {
+  height: 10px;
+}
+.form-message {
+  margin-top: 15px;
+}
 .form-message form div {
   width: 100%;
   height: 120px;
@@ -177,10 +188,13 @@ body {
   border-radius: 5px;
 }
 .form-send form {
-  margin: 15px 0px;
-  height: 50px;
+  /* margin: 15px 0px;
+  height: 50px; */
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 50px;
 }
 .form-send form button {
   width: 80px;
@@ -193,7 +207,37 @@ body {
 .form-send .c {
   width: 10px;
 }
-
+.human {
+  display: flex;
+}
+.human input {
+  margin-right: 10px;
+}
+.container6 {
+  margin: 1px;
+  padding: 10px 0;
+  align-items: center;
+}
+.container6 p {
+  margin-top: 10px;
+  color: rgb(85, 85, 85);
+}
+.container6 .nav-icon {
+  display: flex;
+  align-items: center;
+}
+.container6 .nav-icon div {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #858585;
+}
+.container6 .nav-icon a {
+  margin: 20px 3px;
+}
 @media (min-width: 600px) and (max-width: 850px) {
   .row1 > .col-4,
   .row1 > .col-8,
@@ -250,8 +294,8 @@ body {
   .c4,
   .c5,
   .c6 {
-    box-shadow: 0px -1px 0px black; /* Sharp shadow only at the bottom */
-    width: fit-content; /* Ensures shadow stays only at the bottom */
+    box-shadow: 0px -1px 0px black;
+    width: fit-content;
   }
 
   .container4 {
@@ -271,8 +315,11 @@ body {
   .container5 .container {
     width: 100%;
   }
+  /* .container5 {
+     height: 95vh; 
+  } */
   .form-text form {
-    height: 20vh;
+    height: 28vh;
     flex-direction: column;
   }
   .container5 .form-text div {
@@ -285,8 +332,12 @@ body {
   .form-radio form div {
     margin: 0px;
   }
-  .form-radio form label {
+
+  .form-radio form input {
     margin: 0;
+  }
+  .form-message {
+    margin-top: 20px;
   }
   .container5 .container {
     padding: 0;
