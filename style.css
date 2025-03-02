@@ -127,11 +127,12 @@ button {
   padding: 10px;
 }
 .container3 div .col-2 p {
-  font-size: 13px;
+  font-size: 10px;
   padding: 0;
 }
 .container3 div .col-2 button {
   padding: 10px;
+  font-size: 10px;
 }
 .img div button {
   color: white;
