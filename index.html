@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
+
     <script
       src="https://kit.fontawesome.com/d9a2442d2e.js"
       crossorigin="anonymous"
@@ -17,9 +18,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="position-sticky top-0 navbar navbar-expand-sm bg-body-tertiary">
+    <nav
+      class="position-sticky top-0 navbar navbar-expand-custom bg-body-tertiary"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">TOUR-GUIDE</a>
+        <a class="navbar-brand" href="index.html">TOUR-GUIDE</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,39 +37,38 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-3 me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Stories</a>
+              <a class="nav-link active" href="#story">Stories</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Gallery</a>
+              <a class="nav-link active" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Features</a>
+              <a class="nav-link active" href="#features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Write to us</a>
+              <a class="nav-link active" href="#writetous">Write to us</a>
             </li>
           </ul>
           <div class="nav-icon">
-            <a href=""
-              ><img src="assets/icons_exam_task2/twitter-128.png" alt=""
+            <a href="#"
+              ><img src="assets/icons_exam_task2/twitter-128.png" alt="Twitter"
             /></a>
-            <a href=""
-              ><img src="assets/icons_exam_task2/facebook-128.png" alt=""
+            <a href="#"
+              ><img
+                src="assets/icons_exam_task2/facebook-128.png"
+                alt="Facebook"
             /></a>
-            <a href=""
-              ><img src="assets/icons_exam_task2/instagram-2-128.png" alt=""
+            <a href="#"
+              ><img
+                src="assets/icons_exam_task2/instagram-2-128.png"
+                alt="Instagram"
             /></a>
-            <a href=""
-              ><img src="assets/icons_exam_task2/youtube-128.png" alt=""
+            <a href="#"
+              ><img src="assets/icons_exam_task2/youtube-128.png" alt="YouTube"
             /></a>
-            <a href=""
-              ><img src="assets/icons_exam_task2/gmail-128.png" alt=""
+            <a href="#"
+              ><img src="assets/icons_exam_task2/gmail-128.png" alt="Gmail"
             /></a>
-            <!-- <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fab fa-google"></i> -->
           </div>
         </div>
       </div>
@@ -99,7 +101,7 @@
           <img src="assets/images/img2.jpg" alt="" />
         </div>
         <div class="col-8">
-          <p class="fs-1">Story</p>
+          <p id="story" class="fs-1">Story</p>
           <p class="text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
             aperiam voluptas animi amet totam perspiciatis, dolor doloremque
@@ -107,7 +109,7 @@
             nesciunt corporis consequuntur minus? Temporibus, voluptates.
           </p>
 
-          <button>START</button>
+          <button>More</button>
         </div>
       </div>
       <div class="row align-items-center row2">
@@ -120,7 +122,7 @@
             nesciunt corporis consequuntur minus? Temporibus, voluptates.
           </p>
 
-          <button>START</button>
+          <button>More</button>
         </div>
         <div class="col-4">
           <img src="assets/images/img3.jpg" alt="" />
@@ -128,7 +130,7 @@
       </div>
     </div>
     <div class="container-fluid container3">
-      <h2 class="p-5 text-center">Gallery</h2>
+      <h2 id="gallery" class="p-5 text-center">Gallery</h2>
       <div class="container-fluid">
         <div class="row">
           <div class="col col1 img">
@@ -179,7 +181,7 @@
       </div>
     </div>
     <div class="container-fluid container4">
-      <h2 class="p-5 text-center">Features</h2>
+      <h2 id="features" class="p-5 text-center">Features</h2>
       <div class="container-fluid">
         <div class="row text-center">
           <div
@@ -242,7 +244,7 @@
       </div>
     </div>
     <div class="container-fluid container5">
-      <h2 class="p-5 text-center m-0">Write to us</h2>
+      <h2 id="writetous" class="p-5 text-center m-0">Write to us</h2>
       <div class="container">
         <div class="form-text">
           <form>
